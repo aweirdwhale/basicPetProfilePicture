@@ -1,18 +1,27 @@
-import fetch from 'node-fetch';
+"use strict";
+Object.defineProperty(exports, "__esModule", {value: true});
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 
 //prédéfinis un animal aléatoirement
 const animals = ['Bird', 'Cat', 'Dog', 'fox', 'kangaroo', 'koala', 'panda', 'raccoon', 'red_panda']
 const animal = animals[Math.floor(Math.random() * animals.length)]
 
-async function getImage() {
-  const PP = await fetch(`https://some-random-api.ml/img/${animal}`)
-            .then(res => res.json())
-            .then(json => json.link);
+var _nodesuperfetch = require('node-superfetch');
+var _nodesuperfetch2 = _interopRequireDefault(_nodesuperfetch);
+var n = async t => {
+        let e = await _nodesuperfetch2.default.get(t);
+        if (e.ok) 
+            return e;
+        
+        throw new Error(`Failed to fetch ${t}`)
+},
+  
+  
+s = exports.PP = async () => n(`https://some-random-api.ml/img/${animal}`)
+                                  .then(t => t.body.link)
 
-  console.log(PP + " -> log 1") //logs
-
-}
-
-//getImage();
-
-export default getImage;
+exports.PP = s;
