@@ -33,3 +33,13 @@ profilepic.random() //console log link of a random animal image
 
 - some-random-api.ml
 - node-superfetch
+
+## IMPORTANT NOTE:
+If you get an error like:
+``` 
+    ReferenceError: fetch is not defined
+        at Request._request (//node_modules/node-superfetch/index.js:22:20)
+        at Request.then (//node_modules/node-superfetch/index.js:67:15) 
+```
+        
+simply add `const fetch = require('node-fetch')` at the top of `node_modules/node-superfetch/index.js`
