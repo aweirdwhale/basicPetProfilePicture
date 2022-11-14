@@ -1,0 +1,30 @@
+{
+  "name": "basicpetprofilepicture",
+  "version": "1.0.0",
+  "description": "An Api that provide random cute animal pics to use as default Profile Picture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aweirdwhale/basicPetProfilePicture.git"
+  },
+  "keywords": [
+    "Animals",
+    "pet",
+    "random",
+    "profilepicture",
+    "api"
+  ],
+  "author": "aweirdwhale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aweirdwhale/basicPetProfilePicture/issues"
+  },
+  "homepage": "https://github.com/aweirdwhale/basicPetProfilePicture#readme",
+  "dependencies": {
+    "random-animals-api": "^1.2.6",
+    "random-cat-img": "^1.0.7"
+  }
+}
