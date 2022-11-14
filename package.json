@@ -1,5 +1,5 @@
 {
-  "name": "basicpetprofilepicture",
+  "name": "default-pp",
   "version": "1.0.0",
   "description": "An Api that provide random cute animal pics to use as default Profile Picture",
   "main": "index.js",
@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/aweirdwhale/basicPetProfilePicture#readme",
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.30",
     "random-animals-api": "^1.2.6",
-    "random-cat-img": "^1.0.7"
+    "random-cat-img": "^1.0.7",
+    "sharp": "^0.31.2"
   }
 }
