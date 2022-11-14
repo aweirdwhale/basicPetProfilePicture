@@ -12,14 +12,14 @@ profilepic.random() //console log link of a random animal image
 
 <details>
   <summary>List of possibilities</summary>
-    - cat
-    - dog
-    - bird
-    - kangaroo
-    - fox
-    - koala
-    - panda
-    - racoon
+    - cat </br>
+    - dog </br>
+    - bird </br>
+    - kangaroo </br>
+    - fox </br>
+    - koala </br>
+    - panda </br>
+    - racoon </br>
     - red panda
     
 </details>
@@ -29,6 +29,7 @@ profilepic.random() //console log link of a random animal image
 
 1. npm i default-pp
 
-## ⭐️ API i used
+##  API and dependencies i used
 
 - some-random-api.ml
+- node-superfetch
