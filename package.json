@@ -1,6 +1,6 @@
 {
   "name": "default-pp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Api that provide random cute animal pics to use as default Profile Picture",
   "main": "index.js",
   "scripts": {
