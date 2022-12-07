@@ -1,27 +1,20 @@
-# Default Profile Pic API
+# Default Profile Picture API
 
+-> An API that provides random animals images for default profile pictures (crop 1:1)
 
 ## Usage
 ```js
-const profilepic = require('default-pp'); 
-profilepic.random() //console log link of a random animal image
-    .then(url => console.log(url))
-    .catch((error) => console.error(error));
+    import {PP} from 'default-pp' //import the module as ES
 
+    console.log(PP(36)) //change 36 by the limit you want +1
 ```
 
 <details>
-  <summary>List of possibilities</summary>
+  <summary>List of pics possibilities</summary>
     - cat </br>
     - dog </br>
-    - bird </br>
-    - kangaroo </br>
-    - fox </br>
-    - koala </br>
-    - panda </br>
     - racoon </br>
-    - red panda
-    
+    - floppas </br>
 </details>
 
 
@@ -29,17 +22,5 @@ profilepic.random() //console log link of a random animal image
 
 1. npm i default-pp
 
-##  API and dependencies i used
-
-- some-random-api.ml
-- node-superfetch
-
 ## IMPORTANT NOTE:
-If you get an error like:
-``` 
-    ReferenceError: fetch is not defined
-        at Request._request (//node_modules/node-superfetch/index.js:22:20)
-        at Request.then (//node_modules/node-superfetch/index.js:67:15) 
-```
-        
-simply add `const fetch = require('node-fetch')` at the top of `node_modules/node-superfetch/index.js`
+Maximum capacity of this API is 35 images at the day
